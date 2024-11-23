@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: black;
+    color: white;
+    overflow: hidden;
+
+}
+
+.left img{
+    width: 3em;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3em 3em;
+    overflow: hidden;
+}
+
+.menu{
+    display: none;
+    height: 700px;
+    width: 200px;
+    padding: 1.5em;
+    background-color: lightblue;
+    border-radius: 0.5em;
+    position: absolute;
+    right: 0;
+    top: 120px;
+}
+
+.menu ul{
+    list-style-type: none;
+}
+
+ul li{
+    font-size: 1.2em;
+    padding: 0.6em 0;
+    color: black;
+}
+
+button{
+    /* padding: 0.8em 2em; */
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+nav{
+    position: relative;
+}
+
+i{
+    font-size: 1.5em;
+    /* transition: transform 0.3s, opacity 0.3s; */
+}
+
+.open{
+    display: none;
+}
+
+/* nav:has(.b1:focus) .menu{
+    display: block;
+}
+
+nav:not(:has(.b1:focus)) .menu {
+    display: none;
+} */
+
+.toggle-checkbox{
+    display: none;
+}
+
+nav:has(.toggle-checkbox:checked) .menu {
+    display: block;
+}
+
+/* .close:has(.toggle-checkbox:checked) {
+    display: none;
+} */
+
+nav:not(:has(.toggle-checkbox:checked)) .menu {
+    display: none;
+}

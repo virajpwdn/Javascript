@@ -1,0 +1,19 @@
+button{
+    padding: 20px;
+    background-color: lightblue;
+    margin-top: 20px;
+}
+
+.container{
+    height: 600px;
+    width: 600px;
+    background-color: teal;
+    position: relative;
+}
+
+.box{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    position: absolute;
+}
