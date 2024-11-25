@@ -4,7 +4,7 @@ let setHr = document.querySelector(".hour");
 
 sec = 0;
 min = 0;
-hr = 2;
+hr = 8;
 
 // for(let i=0; i<60; i++) {
 //     if(sec <= 60){

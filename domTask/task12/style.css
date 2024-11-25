@@ -1,19 +1,32 @@
 body{
+    height: 100vh;
+    width: 100vw;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container{
+    width: 25%;
+    position: relative;
 }
 
 img{
-    width: 25%;
+    width: 100%;
     object-fit: cover;
-    position: relative;
+    /* position: relative; */
 }
 
 i{
     position: absolute;
     z-index: 99;
-    font-size: 50px;
-    top: 200px;
-    left: 150px;
-    display: none;
+    font-size: 40px;
+    top: 50%;
+    left: 50%;
+    /* display: none; */
+    color: red;
+    transform: translate(-50%,-50%) scale(0);
+    opacity: 1;
+    transition: all ease 0.4s;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); */
 }
